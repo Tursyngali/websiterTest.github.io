@@ -1,0 +1,75 @@
+section {
+	margin: 0;
+	padding: 0;
+	margin-top: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	margin-bottom: -600px;
+	
+}
+
+.box {
+	transform: rotateX(-90deg) rotateY(0deg) rotate3d(1, 0, 0, 90deg);
+	transform-origin: center top;
+	transform-style: preserve-3d;
+	width: 48vmin;
+	position: absolute;
+	z-index: 5;
+	margin-top: 27vmin;
+	transition: transform 1s ease 0s;
+	cursor: pointer;
+	height: 73vmin;
+	margin-left: -32vmin;
+}
+
+.box.opened {
+  transform: rotateX(-35deg) rotateY(0deg) rotateZ(0deg) rotate3d(1, 0, 0, 180deg);
+}
+
+.box div {
+	position: absolute;
+	width: 80vmin;
+	height: 45vmin;
+	background-image: url("https://www.freepnglogos.com/uploads/gmail-email-logo-png-16.png");
+	background-size: cover;
+	opacity: 0.5;
+	border: 3px solid whitesmoke;
+	border-radius: 5px;
+	box-sizing: border-box;
+	box-shadow: 0 0 3px 0 ;
+}
+
+.box > div:nth-child(1) {
+	opacity: 0;
+}
+.box > div:nth-child(2) {
+	transform: rotateX(90deg) translate3d(0px, 5vmin, 5vmin);
+	height: 10vmin;
+}
+.box > div:nth-child(3) {
+	transform: rotateX(0deg) translate3d(0, 0, 10vmin);
+}
+.box > div:nth-child(4) {
+	transform: rotateX(270deg) translate3d(0px, -5vmin, 40vmin);
+	height: 10vmin;
+}
+.box > div:nth-child(5) {
+	transform: rotateY(90deg) translate3d(-5vmin, 0, 40vmin);
+	width: 10vmin;
+}
+.box > div:nth-child(6) {
+	transform: rotateY(-90deg) translate3d(5vmin, 0vmin, 5vmin);
+	width: 10vmin;
+}
+
+.warning {
+	position: absolute;
+	z-index: 0;
+	width:80vmin;
+	height: 45vmin;
+	background: transparent;
+	box-shadow: 0 0 0 0.5vmin ghostwhite;
+	border-radius: 5px;
+}

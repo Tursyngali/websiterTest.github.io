@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="rus">
+	<head>
+	<meta charset="utf-8">
+	<meta charset="viewport" content="width=device-width, initial scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="footer.css">
+	<link rel="stylesheet" type="text/css" href="imageslider.css">
+	<link rel="stylesheet" type="text/css" href="emailwithanimation.css">
+	<link rel="stylesheet" type="text/css" href="contact_form.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	
+	</head>
+	<header >
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+		<div class="header1">
+		<ul>
+			<li><button class="button-1"><a href="#" >ЗАБРОНИРОВАТЬ КАБИНКУ</a></button></li>
+			<li class="circle-text-1"><span>РЫБА МОЕЙ МЕЧТЫ</span></li>
+			<li><img src="https://images.fineartamerica.com/images-medium-large-5/koi-circle-art-et-be.jpg" alt="logo"></li>
+			<li><button class="button-1"><a href="#" >ЗВОНИТЕ ПО НОМЕРУ:7777-777-77-77</a></button></li>
+		</ul>
+			
+		</div>
+		<div class="header2">
+		<ul>
+			<li><a href="#" class="active">ГЛАВНАЯ</a></li>
+			<li><a href="#">НАШИ ЗАВЕДЕНИЯ</a></li>
+			<li><a href="#">МЕНЮ</a></li>
+			<li><a href="#">АКЦИИ</a></li>
+			<li><a href="#">КАРТА ГОСТЕЙ</a></li>
+			<li><a href="#">КОНТАКТЫ</a></li>
+			<li><a href="#">НА КАРТЕ</a></li>
+		</ul>			
+		</div>
+
+	</header>
+<body>
+
+	<script type="text/javascript">
+
+		$(function(){$(".circle-text-1 span").lettering();})
+
+		var counter=1;
+		setInterval(function(){
+			document.getElementById('radio'+counter).checked=true;
+			counter++;
+			if(counter>4){
+				counter=1;
+			}
+		},7000);
+	</script>
+
+	<div class="slider">
+		<div class="slides">
+			
+			<input type="radio" name="radio-btn" id="radio1">
+			<input type="radio" name="radio-btn" id="radio2">
+			<input type="radio" name="radio-btn" id="radio3">
+			<input type="radio" name="radio-btn" id="radio4">
+
+			<div class="slide first">
+				<img src="https://nika.land/wp-content/uploads/2020/09/karaoke-bar.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/karaoke-banner-design-template-77bcd64504a97c0fa5fba88f64ac71c0_screen.jpg?ts=1572939908" alt="">
+			</div>
+			<div class="slide">
+				<img src="https://media.istockphoto.com/vectors/karaoke-night-vector-neon-sign-luminous-symbol-symbol-light-banner-vector-id925882584" alt="">
+			</div>
+			<div class="slide">
+				<img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/nye-night-club-party-facebook-banner-design-template-75831b222ddcb8bfc1da52b9d97b3f90_screen.jpg?ts=1561428458" alt="">
+			</div>
+
+			<div class="navigation-auto">
+				<div class="auto-btn1"></div>
+				<div class="auto-btn2"></div>
+				<div class="auto-btn3"></div>
+				<div class="auto-btn4"></div>
+
+			</div>
+		</div>
+
+		<div class="navigation-manual">
+			
+			<label for="radio1" class="manual-btn"></label>
+			<label for="radio2" class="manual-btn"></label>
+			<label for="radio3" class="manual-btn"></label>
+			<label for="radio4" class="manual-btn"></label>
+
+		</div>
+	</div>
+
+	<section>
+		<div class="warning"></div>
+		<div class="container">
+			<form id="contact2" action="" method="post" >
+    		<fieldset>
+      			<input placeholder="Ваше имя" type="text" tabindex="1" required autofocus>
+    		</fieldset>
+    		<fieldset>
+     			<input placeholder="Ваш адрес почты" type="email" tabindex="2" required>
+    		</fieldset>
+    		<fieldset>
+    		<fieldset>
+      			<textarea placeholder="Введите ваше сообщение здесь...." tabindex="5" required></textarea>
+    		</fieldset>
+    		<fieldset>
+     			<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Отправить</button>
+    		</fieldset>
+  			</form>
+		</div>
+
+		<div class="box opened" id="cover">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<span></span><span></span>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container2">
+			<div class="row">
+				<div class="footer-col">
+					<h4>Компания</h4>
+					<ul>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Наши услуги</a></li>
+						<li><a href="#">Политика приватности</a></li>
+						<li><a href="#">Поддержка</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Помощь</h4>
+					<ul>
+						<li><a href="#">Вопросы</a></li>
+						<li><a href="#">Транспортировка</a></li>
+						<li><a href="#">Жалобы</a></li>
+						<li><a href="#">Способы Оплаты</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Онлайн магазин</h4>
+					<ul>
+						<li><a href="#"></a></li>
+						<li><a href="#">Наши услуги</a></li>
+						<li><a href="#">Политика приватности</a></li>
+						<li><a href="#">Поддержка</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Подписывайтесь</h4>
+					<div class="social-links">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-linkedin"></i></a>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</footer>
+<script type="text/javascript">
+
+	var cover = document.getElementById("cover").addEventListener("click", function () {
+	if (this.className == "box") this.classList.add("opened");
+	else this.classList.remove("opened");
+	});
+
+</script>
+</body>
+</html>

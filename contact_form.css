@@ -1,0 +1,77 @@
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}*/
+.container {
+
+  width: 60vmin;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+#contact2 {
+  background: transparent;
+  padding: 25px;
+  margin: 150px 0;
+}
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact2 input[type="text"],
+#contact2 input[type="email"],
+#contact2 textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  border-radius: 3px;
+  transition: 1s ease;
+}
+
+#contact2 input[type="text"]:hover,
+#contact2 input[type="email"]:hover,
+#contact2 textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  background: transparent;
+}
+
+#contact2 textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact2 button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #7ED4F7;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+  transition: 1s ease;
+}
+
+#contact2 button[type="submit"]:hover {
+  background: #F35A39;
+  -webkit-transition: background 0.3s ease-in-out;
+}
+
+#contact2 button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
